@@ -11,7 +11,13 @@
 
 @implementation UILabel (background)
 
-- (void)addBackgroundWithColor:(UIColor *)backgroundColor parentView:(UIView *)parentView margin:(NSNumber *)margin topConstraint:(NSNumber *)topConstraint bottomConstraint:(NSNumber *)bottomConstraint leftConstraint:(NSNumber *)leftConstraint rightConstraint:(NSNumber *)rightConstraint {
+- (void)addBackgroundWithColor:(UIColor *)backgroundColor 
+                    parentView:(UIView *)parentView 
+                        margin:(NSNumber *)margin 
+                 topConstraint:(NSNumber *)topConstraint 
+              bottomConstraint:(NSNumber *)bottomConstraint 
+                leftConstraint:(NSNumber *)leftConstraint 
+               rightConstraint:(NSNumber *)rightConstraint {
     [self sizeToFit];
     CGSize sizeThatFits = self.frame.size;
     
